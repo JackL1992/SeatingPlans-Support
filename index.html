@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seating Plans – Support</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Helvetica, Arial, sans-serif;
+      max-width: 600px;
+      margin: 2rem auto;
+      line-height: 1.6;
+      padding: 0 1rem;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      margin-top: 1.5rem;
+      color: #111;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    p, li {
+      margin-bottom: 0.75rem;
+    }
+    ul {
+      margin-left: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.875rem;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Seating Plans – Support</h1>
+
+  <p>Welcome to the support page for <strong>Seating Plans</strong>. Below you’ll find answers to common questions and ways to contact us if you need further assistance.</p>
+
+  <h2>Contact Us</h2>
+  <p>If you can’t find a solution here, send an email to <a href="mailto:jack.lyons92@yahoo.ie">jack.lyons92@yahoo.ie</a>. Please include as much detail as you can (your device model, iOS version, a description of the issue, and any screenshots). We aim to respond within 24 hours.</p>
+
+  <h2>Frequently Asked Questions (FAQ)</h2>
+  <h3>1. How do I create a new seating plan?</h3>
+  <p>On the main menu, tap the green <strong>“+”</strong> button. You’ll be prompted to choose a layout, then name your plan. Once you confirm, a new plan appears in your list.</p>
+
+  <h3>2. Why can I only create one plan?</h3>
+  <p>By default, each user can create one free plan. To create additional plans, you must purchase a subscription or lifetime access. Tap the <strong>Upgrade</strong> button on the main menu to see subscription options.</p>
+
+  <h3>3. I tapped “Upgrade” but no purchase buttons appear—what should I do?</h3>
+  <ul>
+    <li><strong>Check for “Loading products…”</strong>  
+      If it stays on “Loading products…” for more than a few seconds, ensure you’re running a TestFlight or App Store build on a real device, signed into a <em>Sandbox Apple ID</em> (for TestFlight) or a regular Apple ID (for the live App Store version).</li>
+    <li><strong>Verify your internet connection</strong>  
+      StoreKit requires internet access. Make sure Wi-Fi or cellular data is on.</li>
+    <li><strong>Confirm product status</strong>  
+      In App Store Connect, the in-app purchases must be marked “Ready for Sale.” If any product is still “Ready to Submit,” it won’t load.</li>
+    <li><strong>Restart the app</strong>  
+      Completely close and reopen the app. Then tap “Upgrade” again.</li>
+  </ul>
+
+  <h3>4. How do I sign in with a Sandbox Apple ID for testing?</h3>
+  <ol>
+    <li>Install the TestFlight build on your iPad (no need to sign out of your normal Apple ID).</li>
+    <li>Tap “Upgrade” and wait for the purchase buttons to appear.</li>
+    <li>Tap a “Buy …” button and the App Store sheet appears.  
+      Choose “Use Existing Apple ID,” then select “Sandbox Account.”  
+      Enter your sandbox tester email and password (created in App Store Connect).  
+      If prompted for a verification code, follow the instructions in the email.</li>
+  </ol>
+  <p>After you sign in once, sandbox purchases will proceed in test mode. No real charge applies.</p>
+
+  <h3>5. How do I restore my purchases?</h3>
+  <p>On the main menu, tap the <strong>person icon</strong> (Account). If you’ve already purchased a subscription or lifetime access, you’ll see a “Restore Purchases” button. Tap it to restore your unlocked features. If you don’t see that button, email us at <a href="mailto:jack.lyons92@yahoo.ie">jack.lyons92@yahoo.ie</a> for assistance.</p>
+
+  <h3>6. My subscription expired—can I get it back?</h3>
+  <p>Subscriptions in sandbox test mode expire very quickly (e.g., every 5 minutes for a monthly trial). After expiration, relaunch the app and tap “Restore Purchases.” If your subscription lapsed in production, you’ll need to purchase again via the “Upgrade” button.</p>
+
+  <h3>7. How do I edit or move tables in a plan?</h3>
+  <p>Tap any table square in <strong>Plan Editor</strong> to select it (a blue outline appears). Drag to move it around. Double-tap a table to rename it, or long-press to change its color.</p>
+
+  <h3>8. How do I delete or duplicate a plan?</h3>
+  <p>In the main menu, touch and hold (long-press) a plan thumbnail. An options menu appears—choose “Rename,” “Duplicate,” or “Delete.”</p>
+
+  <h3>9. I’m getting a blank or white screen when I open a plan—what happened?</h3>
+  <ul>
+    <li>Ensure that you’re not in “Delete” mode—tap “Done” if you see the red trash icon.</li>
+    <li>Restart the app. Sometimes the selected plan state can glitch; closing and reopening fixes it.</li>
+    <li>If the problem persists, email us with your device model and iOS version. We may need to fix a rare bug.</li>
+  </ul>
+
+  <h3>10. Which iPad models are supported?</h3>
+  <p>Seating Plans is designed to run on iPads with iPad OS 15.0 or later. We support both 11" and 12.9" iPad screen sizes (all orientations). If you’re on an older iOS version, you may experience layout issues.</p>
+
+  <h2>Troubleshooting & Tips</h2>
+  <h3>• Always use the latest version</h3>
+  <p>To get the newest features and bug fixes, keep your app updated via the App Store or TestFlight.</p>
+
+  <h3>• Check your network</h3>
+  <p>The upgrade flow requires internet. If you’re on a restricted Wi-Fi or have a VPN blocking traffic, StoreKit may not fetch products.</p>
+
+  <h3>• Free vs. Paid Access</h3>
+  <p>Every user always gets one free plan. To create a second plan or more, you must tap “Upgrade” and purchase a subscription (monthly or yearly) or a one-time lifetime unlock. Once purchased, you have unlimited plan creation until you log out or your subscription expires.</p>
+
+  <h3>• Contact for Feature Requests</h3>
+  <p>If you’d like new layout templates or features (e.g., seating analytics, CSV import), email your suggestions to <a href="mailto:jack.lyons92@yahoo.ie">jack.lyons92@yahoo.ie</a>. We read every request and may include top requests in future updates.</p>
+
+  <div class="footer">
+    © 2025 Jack Lyons. All rights reserved.<br />
+    Version 1.0 (1)
+  </div>
+</body>
+</html>
